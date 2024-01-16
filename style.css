@@ -29,5 +29,11 @@ h3 {
     text-transform: none;
     letter-spacing: 0.01em;
     color:white;
+}
 
+input {
+    background: #000;
+    border:none;
+    border-radius: 10%;
+    
 }
