@@ -1,39 +1,85 @@
-body {
-	font: 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    top: 15%;
-	background: linear-gradient(to right, #75E3FF , #fC61FF);
+body {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  font: "Raleway", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  top: 15%;
+  background: #201f22;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.body-gradient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 90vh;
+  text-align: center;
+  background: linear-gradient(to right, #000000, #070007);
+  border-radius: 20px;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 200px;
 }
 
 h1 {
-    font: 600 3.5em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: .5em;
-    width: 100%;
-    color:white;
+  width: 80%;
+  font-size: 3rem;
+  font: 600 3.5em "Raleway", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: white;
 }
 
- body > h2 {
-    color:rgb(0, 0, 0);
+h1,
+h2,
+h3 {
+  text-shadow: rgb(109, 109, 108) 1px 0 10px;
+}
+
+h2 {
+  color: white;
 }
 
 h3 {
-	font: 900 1em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
-    text-align: center;
-    text-transform: none;
-    letter-spacing: 0.01em;
-    color:white;
+  font: 900 1em "Raleway", sans-serif;
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  color: white;
+}
+
+.input-choices {
+  display: flex;
+  justify-content: center;
+  height: 300px;
 }
 
 input {
-    background: #000;
-    border:none;
-    border-radius: 10%;
-    
+  margin: 0 50px 0 50px;
+  width: 150px;
+  height: 150px;
+  background: #000;
+  border: none;
+  border-radius: 10%;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
 }
